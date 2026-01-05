@@ -1,6 +1,7 @@
 @use '../../scss/abstracts/' as a;
 
 .collection {
+  overflow: hidden;
 
   padding-bottom: 40px;
 
@@ -77,6 +78,14 @@
       transform: scale(1) !important;
       width: 10px;
       height: 10px;
+    }
+  }
+
+  &__item {
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
     }
   }
 
@@ -169,6 +178,7 @@
 
   &__bgWrapper {
     position: absolute;
+    z-index: -1;
 
     left: -147px;
     bottom: 102px;

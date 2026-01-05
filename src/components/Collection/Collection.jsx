@@ -20,6 +20,7 @@ export default function Collection() {
             <div
               className={scss.collection__bgWrapper}
               data-aos="zoom-in-right"
+              data-aos-anchor-placement="bottom-bottom"
             >
               <Icon name="ornament-yellow" className={scss.collection__bg} />
             </div>

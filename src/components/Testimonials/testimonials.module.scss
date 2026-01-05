@@ -49,8 +49,20 @@
     position: relative;
     overflow: visible;
 
-    height: 264px;
+    height: 243px + 24px;
     cursor: default;
+
+    @include a.tablet {
+      height: 286px + 24px;
+    }
+
+    @include a.laptop {
+      height: 285px + 24px;
+    }
+
+    @include a.desktop {
+      height: 264px + 24px;
+    }
   }
 
   &__image {

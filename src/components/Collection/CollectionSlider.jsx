@@ -58,7 +58,7 @@ export default function CollectionSlider() {
       {slides.map((item) => {
         return (
           <SwiperSlide key={item.id} className={scss.collection__item}>
-            <div className={scss.collection__itemWrapper}>
+            <div className={scss.collection__itemWrapper} data-aos="fade-up">
               <img
                 src={item.image}
                 srcSet={`${item.image} 1x, ${item.image2x} 2x`}
