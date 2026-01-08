@@ -24,14 +24,15 @@ export default function Hero() {
               <span className={scss.hero__titleHighlighted}>Ukrainian</span>{" "}
               artistry in every stitch.
             </h3>
-            <button
+            <a
+              href="#collection"
               className={scss.hero__btnOrder}
               data-aos="fade-up"
               data-aos-delay="200"
             >
               Order
               {<Icon name="arrow" className={scss.hero__btnArow} />}
-            </button>
+            </a>
           </div>
         </div>
       </div>
